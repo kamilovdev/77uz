@@ -6,7 +6,7 @@
     <div class=" bg-slate-50  h-20 mb-24 ">
         <div class=" container flex    w-full  ">
             <div class=" flex justify-start gap-2 w-full  ">
-                <div class="flex  items-center ">
+                <div class="flex gap-2 items-center ">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M18.5021 3.44922H1.49785C0.670586 3.44922 0 4.1198 0 4.94707V7.81703H20V4.94707C20 4.1198 19.3294 3.44922 18.5021 3.44922Z"
