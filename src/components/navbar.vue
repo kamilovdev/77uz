@@ -36,7 +36,7 @@
             </div>
 
             <div class=" flex justify-end gap-2  w-full ">
-                <button class="flex items-center">
+                <button class="flex gap-1 items-center">
                     <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
