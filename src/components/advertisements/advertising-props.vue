@@ -2,35 +2,12 @@
 import { defineProps } from 'vue';
 
 const props = defineProps({
-    imgSrc: {
-      type: String,
-      required: true,
-    },
-    location: {
-      type: String,
-      default: "г. Ташкент",
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-    timestamp: {
-      type: String,
-      required: true,
-    },
-    phone: {
-      type: String,
-      required: true,
-    },
-    price: {
-      type: String,
-      required: true,
-    },
-    currency: {
-      type: String,
-      default: "UZS",
-    },
+  item:{
+    type: Object,
+    required: true,
+  }
 });
+
 import { ref, onMounted } from 'vue';
 
 const liked = ref(false);
@@ -55,7 +32,7 @@ const toggleLike = () => {
 
     <div class="relative">
       <span>
-        <img :src="imgSrc" alt="Item Image" class="rounded-t-xl" />
+        <img :src="item.img" alt="Item Image" class="rounded-t-xl" />
       </span>
 
       <span v-if="!liked" class="absolute top-[20px] left-4" @click="toggleLike">
@@ -72,20 +49,20 @@ const toggleLike = () => {
      
       <span>
         <p class="text-[#63676C] text-[14px] font-normal w-fit px-2 h-[26px] bg-[#EAEDF0] flex justify-center items-center rounded-[6px]">
-          {{ location }}
+          {{ item.country }}
         </p>
       </span>
 
 
       <span class=" flex flex-col gap-2">      
-        <h1 class="text-[18px] font-semibold text-[#16191D] group-hover:text-[#388FF3] duration-500">{{ title }}</h1>
-        <p class="text-[14px] font-normal text-[#8E9297]">{{ timestamp }}</p>
-        <a class="text-[16px] font-semibold text-[#8E9297]" :href="'tel:' + phone">{{ phone }}</a>
+        <h1 class="text-[18px] font-semibold text-[#16191D] group-hover:text-[#388FF3] duration-500">{{ item.name }}</h1>
+        <p class="text-[14px] font-normal text-[#8E9297]">{{ item.time }}</p>
+        <a class="text-[16px] font-semibold text-[#8E9297]" :href="'tel:' + item.number">{{ item.number }}</a>
       </span>
 
 
       <span class="flex gap-2 items-center">
-        <h1 class="text-[24px] font-bold text-[#16191D]">{{ price }}</h1>
+        <h1 class="text-[24px] font-bold text-[#16191D]">{{ item.price }}</h1>
         <p class="text-[16px] text-[#388FF3] font-medium pt-[6px]">{{ currency }}</p>
       </span>
     </div>

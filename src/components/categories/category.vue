@@ -1,5 +1,18 @@
 <script setup>
+import {ref} from 'vue'
     import categoryProps from './category-props.vue';
+
+    import { data } from '@/data/uz.js'
+
+    const category = ref([]);
+
+
+    category.value = data.map((item) => ({
+        id: item.id,
+        name: item.title,
+        icon: item.icon,
+        count: item.count,
+    }))
 </script>
 
 <template>
@@ -30,33 +43,7 @@
             </div>
 
             <div class="grid grid-cols-3 gap-4 py-9">
-                <categoryProps iconClass="icon-girl" title="Для женщин" subtitle="4 147 объявлений" />
-                <categoryProps iconClass="icon-img" title="Красота" subtitle="574 объявлений" />
-                <categoryProps iconClass="icon-refrigerator" title="Бытовая техника" subtitle="547 объявлений" />
-                <categoryProps iconClass="icon-boy" title="Для мужчин" subtitle="547 объявлений" />
-                <categoryProps iconClass="icon-heart" title="Здоровье" subtitle="684 объявлений" />
-                <categoryProps iconClass="icon-pc-mobile" title="Электроника" subtitle="4 147 объявлений" />
-                
-                <categoryProps iconClass="icon-img-2" title="Детские товары" subtitle="635 объявлений" />
-                <categoryProps iconClass="icon-jewelry" title="Украшения и бижутерия" subtitle="4 147 объявлений" />
-                <categoryProps iconClass="icon-grinder" title="Домашняя утварь" subtitle="4 147 объявлений" />
-                <categoryProps iconClass="icon-shoes" title="Обувь" subtitle="684 объявлений" />
-                <categoryProps iconClass="icon-repair" title="Канцелярия" subtitle="101 объявлений" />
-                <categoryProps iconClass="icon-vacation" title="Спорт и отдых" subtitle="741 объявлений" />
-
-                <categoryProps iconClass="icon-car-repair" title="Автотовары" subtitle="63 объявлений" />
-                <categoryProps iconClass="icon-car" title="Новые легковые автомобили" subtitle="847 объявлений" />
-                <categoryProps iconClass="icon-motorcycle" title="Мототранспорт" subtitle="4 147 объявлений" />
-                <categoryProps iconClass="icon-plant" title="Дача, сады и огороды" subtitle="847 объявлений" />
-                <categoryProps iconClass="icon-Component-14" title="Личная гигиена" subtitle="741 объявлений" />
-                <categoryProps iconClass="icon-bag" title="Аксессуарлар" subtitle="574 объявлений" />
-
-                <categoryProps iconClass="icon-shoes" title="Бытовая химия и личная гигиена" subtitle="101 объявлений" />
-                <categoryProps iconClass="icon-builder" title="Строительство и ремонт" subtitle="4 147 объявлений" />
-                <categoryProps iconClass="icon-bigbag" title="Сумки и чемоданы" subtitle="4 147 объявлений" />
-
-               
-
+               <categoryProps v-for="item in category" :key="item.id" :item="item"/>
             </div>
         </div>
     </div>
