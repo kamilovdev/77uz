@@ -17,7 +17,7 @@ import {ref} from 'vue'
 
 <template>
     <div class=" bg-slate-50   mb-24 ">
-        <div class=" container   w-full  ">
+        <div class=" container   w-full flex flex-col justify-center items-center ">
             <div class="flex justify-center  items-center w-full">
                 <div class="flex justify-center items-center pl-24  " style="transform: translateY(-35px);">
                     <span class="" style="transform: translateX(35px);">
@@ -42,7 +42,7 @@ import {ref} from 'vue'
                     покупателя</p>
             </div>
 
-            <div class="grid grid-cols-3 gap-4 py-9">
+            <div class="grid grid-cols-3 gap-4 py-9 max-[880px]:grid-cols-2 ">
                <categoryProps v-for="item in category" :key="item.id" :item="item"/>
             </div>
         </div>
