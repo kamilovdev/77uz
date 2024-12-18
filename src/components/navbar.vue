@@ -2,7 +2,7 @@
     import {
         ref
     } from "vue";
-    import Modal from "@/components/modals/modal.vue";
+    import Modal from "../components/modals/modal.vue";
 
     const isModalOpen = ref(false);
 

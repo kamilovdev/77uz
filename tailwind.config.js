@@ -5,11 +5,7 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      boxShadow: {
-        'custom': '0px 8.83px 35.31px 0px #388FF370', 
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }

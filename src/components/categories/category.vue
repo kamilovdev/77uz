@@ -6,7 +6,7 @@
 
     import {
         data
-    } from '@/data/uz.js'
+    } from '../../data/uz.js'
 
     const category = ref([]);
 

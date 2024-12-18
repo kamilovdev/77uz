@@ -13,9 +13,9 @@
 </template>
 
 <script setup>
-    import Advertis from '@/components/advertisements/advertising-props.vue'
+    import Advertis from '../../components/advertisements/advertising-props.vue'
     import {ref} from 'vue'
-    import { card } from '@/data/uz.js'
+    import { card } from '../../data/uz.js'
 
      const product = ref([]);
 
