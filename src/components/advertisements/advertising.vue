@@ -5,7 +5,7 @@
             <p class="font-normal text-[16px] text-[#8E9297]">Вы можете найти все категории, которые вам нужны от
                 покупателя</p>
         </div>
-
+        
         <div class="grid grid-cols-4 gap-[24px] py-9 max-lg:grid-cols-3 max-[880px]:grid-cols-2 ">
             <Advertis v-for="item in product" :key="item.id" :item="item"/>
         </div>
@@ -16,6 +16,7 @@
     import Advertis from '../../components/advertisements/advertising-props.vue'
     import {ref} from 'vue'
     import { card } from '../../data/uz.js'
+
 
      const product = ref([]);
 

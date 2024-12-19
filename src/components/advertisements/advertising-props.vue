@@ -50,7 +50,7 @@
       </span>
     </div>
 
-    <div class="px-[20px] py-5 flex flex-col gap-2">
+    <div class="px-[20px] py-5 flex flex-col gap-2 h-full">
 
       <span>
         <p v-if="isLoading" class="w-[60px] h-[26px] bg-gray-200 rounded-[6px] animate-pulse"></p>
@@ -61,9 +61,9 @@
       </span>
 
       <span class="flex flex-col gap-2">
-        <h1 v-if="isLoading" class="w-[120px] h-[20px] bg-gray-200 rounded-md animate-pulse"></h1>
+        <h1 v-if="isLoading" class="w-[120px] h-[20px] bg-gray-200 rounded-md animate-pulse "></h1>
         <h1 v-else
-          class="text-[18px] font-semibold text-[#16191D] group-hover:text-[#388FF3] duration-500 max-sm:text-[14px]">
+          class="text-[18px] font-semibold text-[#16191D] group-hover:text-[#388FF3] h-[56px] duration-500 max-sm:text-[14px] h-">
           {{ item.name }}
         </h1>
 
@@ -89,7 +89,7 @@
         </h1>
 
         <p v-if="!isLoading" class="text-[16px] text-[#388FF3] font-medium pt-[6px] max-sm:text-[12px]">
-          {{ currency }}
+          {{ item.currency }}
         </p>
       </span>
     </div>
