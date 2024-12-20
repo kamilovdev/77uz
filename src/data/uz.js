@@ -154,7 +154,7 @@ export const card = [
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
         price: "2 599 000" ,
-        image:"../../../public/rek/kepki.png",
+        image:new URL("../../../public/rek/kepki.png", import.meta.url).href,
         currency: "UZS"
     },
     {   
