@@ -15,7 +15,7 @@
 <template>
   <div class="flex items-center group">
     <div
-      class="w-[64px] h-[64px] flex absolute justify-center items-center rounded-xl border transition-all duration-500  group-hover:bg-[#388FF3] group-active:bg-[#388FF3]">
+      class="w-[64px] h-[64px] flex absolute bg-white justify-center items-center rounded-xl border transition-all duration-500  group-hover:bg-[#388FF3] group-active:bg-[#388FF3]">
       <span :class="[
           item.icon,
           'text-[32px] text-[#388FF3] group-hover:text-white group-active:text-white',

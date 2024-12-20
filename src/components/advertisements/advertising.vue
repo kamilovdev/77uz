@@ -6,31 +6,53 @@
                 покупателя</p>
         </div>
         
-        <div class="grid grid-cols-4 gap-[24px] py-9 max-lg:grid-cols-3 max-[880px]:grid-cols-2 ">
+        <div class="grid grid-cols-4 gap-[24px] py-9 max-lg:grid-cols-3 max-[880px]:grid-cols-2 " v-show="!loading">
             <Advertis v-for="item in product" :key="item.id" :item="item"/>
+        </div>
+        <div  class="grid grid-cols-4 gap-[24px] py-9 max-lg:grid-cols-3 max-[880px]:grid-cols-2 ">
+            <LoadingCard
+                type="advertis"
+                v-for="i in 8"
+                :key="i"
+                v-show="loading"    
+              />
         </div>
     </div>
 </template>
 
 <script setup>
     import Advertis from '../../components/advertisements/advertising-props.vue'
-    import {ref} from 'vue'
+    import LoadingCard from "../ui/loading.vue"; 
+
+    import {ref , onMounted} from 'vue'
     import { card } from '../../data/uz.js'
-
-
      const product = ref([]);
+     const loading = ref(false);
 
 
-    product.value = card.map((item) => ({
-            id: item.id,
-            name: item.title,
-            country: item.country,
-            time: item.time,
-            number: item.number,
-            price: item.price ,
-            img: item.image,
-            currency: item.currency
-        }))
+     const LoadAdvertis = () => {
+    loading.value = true
+    setTimeout(() =>{
+
+        product.value = card.map((item) => ({
+                id: item.id,
+                name: item.title,
+                country: item.country,
+                time: item.time,
+                number: item.number,
+                price: item.price ,
+                img: item.image,
+                currency: item.currency
+            }))
+     
+
+     loading.value = false;
+
+ } ,500)
+};
+onMounted(() => {
+    LoadAdvertis();
+});
 </script>
 
 <style scoped></style>
