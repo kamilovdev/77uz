@@ -190,7 +190,7 @@ export const card = [
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
         price: "2 599 000",
-        image: "/rek/nike.png", // Modified path
+        image: "/rek/watch.png", // Modified path
         currency: "UZS"
     },
     {   
