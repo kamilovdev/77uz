@@ -46,7 +46,7 @@
       </span>
     </div>
 
-    <div class="px-[20px] py-5 flex flex-col gap-2 h-full">
+    <div class="px-[20px] py-5 flex flex-col gap-2 ">
 
       <span>
       
