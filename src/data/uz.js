@@ -149,122 +149,111 @@ export const data = [
 
 export const card = [
     {   
-        country:" г. Ташкент ",
+        country: "г. Ташкент",
         title: "Кепки Corneliani Diamond for him edition.",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
-        price: "2 599 000" ,
-        image:new URL("../../../public/rek/kepki.png", import.meta.url).href,
+        price: "2 599 000",
+        image: "/rek/kepki.png", // Modified path
         currency: "UZS"
     },
     {   
-        country:" г. Самарканд",
+        country: "г. Самарканд",
         title: "Chevrolet Onix 1.2 Turbo в наличии",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
-        price: "204 000 000" ,
-        image:"../../../public/rek/onix.png",
+        price: "204 000 000",
+        image: "/rek/onix.png", // Modified path
         currency: "UZS"
-
     },
     {   
-        country:" г. Ташкент ",
+        country: "г. Ташкент",
         title: "7Saber Trucker Cap",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
-        price: "280 000" ,
-        image:"../../../public/rek/kepki2.png",
+        price: "280 000",
+        image: "/rek/kepki2.png", // Modified path
         currency: "UZS"
-
     },
     {   
-        country:" г. Ташкент ",
+        country: "г. Ташкент",
         title: "Оригинальные кроссовки Nike Air Max Plus",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
-        price: "2 599 000" ,
-        image:"../../../public/rek/shoes.png",
+        price: "2 599 000",
+        image: "/rek/shoes.png", // Modified path
         currency: "UZS"
-
     },
     {   
-        country:" г. Ташкент ",
+        country: "г. Ташкент",
         title: "Apple Watch Series 8 - USA Non active",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
-        price: "2 599 000" ,
-        image:"../../../public/rek/nike.png",
+        price: "2 599 000",
+        image: "/rek/nike.png", // Modified path
         currency: "UZS"
-
     },
     {   
-        country:" г. Ташкент ",
+        country: "г. Ташкент",
         title: "Кепки Corneliani Diamond for him edition.",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
-        price: "2 599 000" ,
-        image:"../../../public/rek/nike.png",
-        currency: "UZS",
-
+        price: "2 599 000",
+        image: "/rek/nike.png", // Modified path
+        currency: "UZS"
     },
     {   
-        country:" г. Самарканд",
+        country: "г. Самарканд",
         title: "Chevrolet Onix 1.2 Turbo в наличии",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
-        price: "204 000 000" ,
-        image:"../../../public/rek/cadilac.png",
+        price: "204 000 000",
+        image: "/rek/cadilac.png", // Modified path
         currency: "UZS"
-
     },
     {   
-        country:" г. Ташкент ",
+        country: "г. Ташкент",
         title: "7Saber Trucker Cap",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
-        price: "280 000" ,
-        image:"../../../public/rek/dyson.png",
+        price: "280 000",
+        image: "/rek/dyson.png", // Modified path
         currency: "UZS"
-
     },
     {   
-        country:" г. Ташкент ",
+        country: "г. Ташкент",
         title: "Оригинальные кроссовки Nike Air Max Plus",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
-        price: "2 599 000" ,
-        image:"../../../public/rek/kepki2.png",
+        price: "2 599 000",
+        image: "/rek/kepki2.png", // Modified path
         currency: "UZS"
-
     },
     {   
-        country:" г. Ташкент ",
+        country: "г. Ташкент",
         title: "Apple Watch Series 8 - USA Non active",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
-        price: "2 599 000" ,
-        image:"../../../public/rek/shoes.png",
+        price: "2 599 000",
+        image: "/rek/shoes.png", // Modified path
         currency: "UZS"
-
     },
     {   
-        country:" г. Самарканд",
+        country: "г. Самарканд",
         title: "Chevrolet Onix 1.2 Turbo в наличии",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
-        price: "204 000 000" ,
-        image:"../../../public/rek/onix.png",
+        price: "204 000 000",
+        image: "/rek/onix.png", // Modified path
         currency: "UZS"
-
     },
     {   
-        country:" г. Ташкент ",
+        country: "г. Ташкент",
         title: "7Saber Trucker Cap",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
-        price: "280 000" ,
-        image:"../../../public/rek/kepki.png",
+        price: "280 000",
+        image: "/rek/kepki.png", // Modified path
         currency: "UZS"
-
     },
-]
+];
