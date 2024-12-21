@@ -32,62 +32,49 @@
 </script>
 
 <template>
-  <div class="bg-white w-[278px] h-[470px] rounded-xl group max-sm:w-[161px] max-sm:h-fit">
-    <div class="relative">
-     
+  <RouterLink to="/">
+    <div class="bg-white w-[278px] h-[470px] rounded-xl group max-sm:w-[161px] max-sm:h-fit">
+      <div class="relative">
+        <span>
+          <img :src="item.img" alt="Item Image" class="rounded-t-xl max-sm:h-[130px] max-sm:w-[161px]" />
+        </span>
   
-      <span>
-        <img :src="item.img" alt="Item Image" class="rounded-t-xl max-sm:h-[130px] max-sm:w-[161px]" />
-      </span>
-
-      <span class="absolute top-[20px] left-4 max-sm:text-[17px]" @click="toggleLike">
-        <span v-if="!liked" class="text-white icon-black-heart text-[30px] cursor-pointer"></span>
-        <span v-else class="text-[30px] icon-like-2 cursor-pointer"></span>
-      </span>
+        <span class="absolute top-[20px] left-4 max-sm:text-[17px]" @click="toggleLike">
+          <span v-if="!liked" class="text-white icon-black-heart text-[30px] cursor-pointer"></span>
+          <span v-else class="text-[30px] icon-like-2 cursor-pointer"></span>
+        </span>
+      </div>
+  
+      <div class="px-[20px] py-5 flex flex-col gap-2 ">
+        <span>
+          <p 
+            class="text-[#63676C] text-[14px] font-normal w-fit px-2 h-[26px] bg-[#EAEDF0] flex justify-center items-center rounded-[6px] max-sm:text-[10px]">
+            {{ item.country }}
+          </p>
+        </span>
+        <span class="flex flex-col gap-2">
+          <h1 
+            class="text-[18px] font-semibold text-[#16191D] group-hover:text-[#388FF3] h-[56px] duration-500 max-sm:text-[14px] h-">
+            {{ item.name }}
+          </h1>
+          <p  class="text-[14px] font-normal text-[#8E9297] max-sm:text-[12px]">
+            {{ item.time }}
+          </p>
+        </span>
+        <span>
+          <a class="text-[16px] font-semibold text-[#8E9297] max-sm:text-[12px]" :href="'tel:' + item.number">
+            {{ item.number }}
+          </a>
+        </span>
+        <span class="flex gap-2 items-center"> 
+          <h1 class="text-[24px] font-bold text-[#16191D] max-sm:text-[13px]">
+            {{ item.price }}
+          </h1>
+          <p class="text-[16px] text-[#388FF3] font-medium pt-[6px] max-sm:text-[10px]">
+            {{ item.currency }}
+          </p>
+        </span>
+      </div>
     </div>
-
-    <div class="px-[20px] py-5 flex flex-col gap-2 ">
-
-      <span>
-      
-        <p 
-          class="text-[#63676C] text-[14px] font-normal w-fit px-2 h-[26px] bg-[#EAEDF0] flex justify-center items-center rounded-[6px] max-sm:text-[10px]">
-          {{ item.country }}
-        </p>
-      </span>
-
-      <span class="flex flex-col gap-2">
-      
-        <h1 
-          class="text-[18px] font-semibold text-[#16191D] group-hover:text-[#388FF3] h-[56px] duration-500 max-sm:text-[14px] h-">
-          {{ item.name }}
-        </h1>
-
-     
-        <p  class="text-[14px] font-normal text-[#8E9297] max-sm:text-[12px]">
-          {{ item.time }}
-        </p>
-      </span>
-
-     
-      <span>
-       
-        <a class="text-[16px] font-semibold text-[#8E9297] max-sm:text-[12px]" :href="'tel:' + item.number">
-          {{ item.number }}
-        </a>
-      </span>
-
-   
-      <span class="flex gap-2 items-center">
-     
-        <h1 class="text-[24px] font-bold text-[#16191D] max-sm:text-[16px]">
-          {{ item.price }}
-        </h1>
-
-        <p class="text-[16px] text-[#388FF3] font-medium pt-[6px] max-sm:text-[12px]">
-          {{ item.currency }}
-        </p>
-      </span>
-    </div>
-  </div>
+  </RouterLink>
 </template>

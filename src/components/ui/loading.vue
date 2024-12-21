@@ -17,11 +17,13 @@
       </div>
     </div>
 
+
+    
     <div v-if="type === 'advertis'"
-     class=" flex flex-col gap-44 bg-white w-[278px] h-[470px] rounded-xl group max-sm:w-[161px] max-sm:h-fit">
+     class=" flex flex-col gap-4 bg-white w-[278px] h-[470px] rounded-xl group max-sm:w-[161px] max-sm:h-fit">
   <div class="relative">
     <!-- Loading State for Image -->
-    <span class="bg-[#E0E0E0] w-278px    h-[140px] rounded-t-xl max-sm:h-[130px] max-sm:w-[161px] animate-pulse"></span>
+    <div class="bg-[#E0E0E0] w-278px  h-[240px] rounded-t-xl max-sm:h-[130px] max-sm:w-[161px] animate-pulse"></div>
 
   
     <span class="absolute top-[20px] left-4 max-sm:text-[17px]">

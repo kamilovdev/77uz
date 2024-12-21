@@ -8,10 +8,12 @@ import Advertising from '../components/advertisements/advertising.vue'
      <Advertising/>
      
      <div class="flex justify-center">
-          <RouterLink to="/" class="bg-[#EAEDF0] px-[26px] py-[11px] rounded-[100px] border-2 font-semibold">
+          <RouterLink to="Product" class="bg-[#EAEDF0] px-[26px] py-[11px] rounded-[100px] border-2 font-semibold">
                Загрузить больше <i class="fa-solid fa-angles-down"></i>
           </RouterLink>
      </div>
+
+
 </template>
 
 <style scoped>

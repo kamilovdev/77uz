@@ -3,8 +3,8 @@
         ref
     } from "vue";
     import Modal from "../components/modals/modal.vue";
-
     const isModalOpen = ref(false);
+
 
 
     const openModal = () => {
@@ -14,16 +14,18 @@
     const closeModal = () => {
         isModalOpen.value = false;
     };
+
+
 </script>
 
 <template>
-    <div class=" bg-slate-50  h-20 mb-24 flex justify-between">
+    <div class=" bg-slate-50  h-20 mb-5 flex justify-between">
         <div class=" containerMain flex items-center justify-between">
             <div class=" flex items-center gap-2">
-                <div class="flex gap-2 items-center pl-5      ">
+                <div class="flex gap-1 items-center pl-5 cursor-pointer">
                     <span><img src="../../public/navbar/Language.svg" alt=""></span>
                     <span class="max-sm:hidden">Русский</span>
-                    <span class="sm:hidden max-sm:text-[12px]">РУ</span>
+                    <span class="sm:hidden max-sm:text-[12px] pt-1">РУ</span>
                     <i class="fa-solid fa-chevron-down max-sm:text-[9px]"></i>
                 </div>
 
@@ -102,9 +104,12 @@
                         </div>
                     </div>
                 </Modal>
+        
+
             </div>
         </div>
     </div>
+
 </template>
 
 <style scoped>
