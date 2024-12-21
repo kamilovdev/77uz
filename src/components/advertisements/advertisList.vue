@@ -1,12 +1,12 @@
 <template>
     <div class="flex flex-col gap-5  containerMain">
-        <div class="flex gap-4">
+        <div class="flex gap-4 max-xl:hidden">
             <router-link to="/" class="text-[14px] text-[#16191D] font-medium">Главная</router-link>
             <router-link to="/" class="text-[14px] text-[#B8BBBD] font-medium">Рестораны и кафе</router-link>
         </div>
 
         <main class="flex gap-6">
-            <div class="flex flex-col gap-4 bg-white w-[262px] h-fit py-[16px] px-[16px] rounded-lg">
+            <div class="flex flex-col gap-4 bg-white w-[262px] h-fit py-[16px] px-[16px] rounded-lg max-lg:hidden ">
                 <h1 class="text-[20px] font-semibold text-[#16191D]">Фильтр</h1>
                 <div class="flex flex-col gap-5">
                     <div class="flex flex-col gap-[20px]">
@@ -32,17 +32,17 @@
 
                         <div>
                             <span class="flex gap-2 text-[14px] font-medium text-[#16191D] py-[13px]">
-                                <input type="radio">
+                                <input type="radio" class="w-5">
                                 <p>Дешёвые сперва</p>
                             </span>
-                            <hr>
+                            <hr>    
                             <span class="flex gap-2 text-[14px] font-medium text-[#16191D] py-[13px]">
-                                <input type="radio">
+                                <input type="radio" class="w-5">
                                 <p>Дорогие сперва</p>
                             </span>
                             <hr>
                             <span class="flex gap-2 text-[14px] font-medium text-[#16191D] py-[13px]">
-                                <input type="radio">
+                                <input type="radio" class="w-5" >
                                 <p>Новые сперва</p>
                             </span>
                         </div>
@@ -120,28 +120,81 @@
                                 <input class="w-[20px] rounded-md text-[#D5D8DB]" type="checkbox">
                                 <p>Премиум</p>
                             </span>
+
+                            <button class="w-[230px] mt-[27px] h-11 bg-[#388FF3] rounded-lg text-white font-semibold transition-all duration-300 hover:bg-[#3879f3]  ">
+                                Применить фильтр
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="w-full">
-                <span>
-                    <h1 class="text-[32px] font-bold">Ноутбуки и планшеты</h1>
-                </span>
+            <article>
+                <div class="w-full flex flex-col gap-3">
+                   <Goback/>
 
-                <div class="flex justify-between">
-                    <p class="text-[#8E9297] text-[14px] font-medium">156 объявлений</p>
+                    <div class="flex justify-between">
+                        <p class="text-[#8E9297] text-[14px] font-medium">156 объявлений</p>
 
-                    <span class="flex gap-3">
-                        <img src="../../../public/productList//list.png" alt="">
-                        <img src="../../../public/productList//kvadrat.png" alt="">
-                    </span>
+                        <span class="flex gap-3">
+                            <img src="../../../public/productList//list.png" alt="">
+                            <img src="../../../public/productList//kvadrat.png" alt="">
+                        </span>
+                    </div>
                 </div>
-            </div>
+
+                <div class="grid grid-cols-3 gap-[24px] py-9 max-xl:grid-cols-2 " v-show="!loading">
+                    <Advertis v-for="item in product" :key="item.id" :item="item" />
+                </div>
+                <div class="grid grid-cols-4 gap-[24px] py-9 max-lg:grid-cols-3 max-[880px]:grid-cols-2 ">
+                    <LoadingCard type="advertis" v-for="i in 8" :key="i" v-show="loading" />
+                </div>
+            </article>
+
         </main>
     </div>
 </template>
-<script setup></script>
+<script setup>
+    import Advertis from './advertising-props.vue';
+    import LoadingCard from "../ui/loading.vue";
+    import Goback from './goback.vue';
+    import {
+        ref,
+        onMounted
+    } from 'vue'
+    import {
+        card
+    } from '../../data/uz.js'
+    const product = ref([]);
+    const loading = ref(false);
+
+
+    const LoadAdvertis = () => {
+        loading.value = true
+        setTimeout(() => {
+
+            product.value = card.map((item) => ({
+                id: item.id,
+                name: item.title,
+                country: item.country,
+                time: item.time,
+                number: item.number,
+                price: item.price,
+                img: item.image,
+                currency: item.currency
+            }))
+
+
+            loading.value = false;
+
+        }, 500)
+    };
+    onMounted(() => {
+        LoadAdvertis();
+    });
+
+
+
+</script>
 
 <style scoped></style>

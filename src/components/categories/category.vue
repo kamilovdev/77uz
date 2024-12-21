@@ -30,7 +30,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-col justify-center items-center bg-white gap-6 max-sm:items-start max-sm:px-5">
+  <div class="flex flex-col justify-center items-center bg-white gap-6 max-sm:items-start max-sm:px-5 mt-28">
   
     <div class="flex bg-white w-[580px] justify-center items-center px-5 rounded-lg max-sm:w-[335px] shadow-lg focus-within:shadow-[0px_8.83px_35.31px_0px_#388FF370] transition-all"
          style="transform: translateY(-30px);">
