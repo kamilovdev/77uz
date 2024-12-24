@@ -13,7 +13,7 @@
 </script>
 
 <template>
-  <div class="flex items-center group">
+  <div class="flex items-center group cursor-pointer">
     <div
       class="w-[64px] h-[64px] flex absolute bg-white justify-center items-center rounded-xl border transition-all duration-500  group-hover:bg-[#388FF3] group-active:bg-[#388FF3]">
       <span :class="[
@@ -22,7 +22,7 @@
         ]"></span>
     </div>
     <div
-  class="flex w-[318px] h-[85px] justify-between ml-8 items-center shadow-lg border rounded-xl px-3 transition-all duration-500 max-sm:w-full group-hover:border-[#388FF3] group-active:border-[#388FF3]">
+  class="flex w-full h-[85px] justify-between ml-8 items-center shadow-lg border rounded-xl px-3 transition-all duration-500 max-sm:w-full group-hover:border-[#388FF3] group-active:border-[#388FF3]">
   <span class="px-[44px]">
     <p class="font-semibold text-[#16191D] group-active:text-[#16191D]">
       {{ item.name }}

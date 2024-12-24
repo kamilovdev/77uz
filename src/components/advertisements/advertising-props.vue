@@ -16,9 +16,6 @@
 
 
   onMounted(() => {
-   
-
-   
     const storedLiked = localStorage.getItem('liked');
     if (storedLiked !== null) {
       liked.value = JSON.parse(storedLiked);
@@ -32,12 +29,12 @@
 </script>
 
 <template>
-  <RouterLink to="/">
-    <div class="bg-white w-[278px] h-[470px] rounded-xl group max-sm:w-[161px] max-sm:h-fit">
+  <RouterLink to="Product">
+    <div class="bg-white w-full rounded-xl group">
       <div class="relative">
-        <span>
-          <img :src="item.img" alt="Item Image" class="rounded-t-xl max-sm:h-[130px] max-sm:w-[161px]" />
-        </span>
+        <div class="w-full">
+          <img :src="item.img" alt="Item Image" class="rounded-t-xl w-full" />
+        </div>
   
         <span class="absolute top-[20px] left-4 max-sm:text-[17px]" @click="toggleLike">
           <span v-if="!liked" class="text-white icon-black-heart text-[30px] cursor-pointer"></span>
@@ -54,7 +51,7 @@
         </span>
         <span class="flex flex-col gap-2">
           <h1 
-            class="text-[18px] font-semibold text-[#16191D] group-hover:text-[#388FF3] h-[56px] duration-500 max-sm:text-[14px] h-">
+            class="text-[18px] font-semibold text-[#16191D] group-hover:text-[#388FF3] h-[56px] duration-500 max-sm:text-[14px]">
             {{ item.name }}
           </h1>
           <p  class="text-[14px] font-normal text-[#8E9297] max-sm:text-[12px]">

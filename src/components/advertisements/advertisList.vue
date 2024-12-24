@@ -1,8 +1,8 @@
 <template>
     <div class="flex flex-col gap-5  containerMain">
         <div class="flex gap-4 max-xl:hidden">
-            <router-link to="/" class="text-[14px] text-[#16191D] font-medium">Главная</router-link>
-            <router-link to="/" class="text-[14px] text-[#B8BBBD] font-medium">Рестораны и кафе</router-link>
+            <router-link to="Product" class="text-[14px] text-[#16191D] font-medium">Главная</router-link>
+            <router-link to="Product" class="text-[14px] text-[#B8BBBD] font-medium">Рестораны и кафе</router-link>
         </div>
 
         <main class="flex gap-6">
@@ -11,11 +11,7 @@
                 <div class="flex flex-col gap-5">
                     <div class="flex flex-col gap-[20px]">
                         <span class="flex flex-col gap-2">
-                            <p class="text-[14px] text-[#63676C] font-medium">Регион</p>
-                            <button
-                                class="border border-[#EAEDF0] w-[230px] h-11 rounded-lg text-[14px] font-normal flex justify-between items-center px-[12px]">
-                                Самаркандская область <i class="icon-stroke text-[10px] text-[#8E9297]"></i>
-                            </button>
+                            <filtrModal />
                         </span>
 
                         <span class="flex flex-col gap-2">
@@ -35,14 +31,14 @@
                                 <input type="radio" class="w-5">
                                 <p>Дешёвые сперва</p>
                             </span>
-                            <hr>    
+                            <hr>
                             <span class="flex gap-2 text-[14px] font-medium text-[#16191D] py-[13px]">
                                 <input type="radio" class="w-5">
                                 <p>Дорогие сперва</p>
                             </span>
                             <hr>
                             <span class="flex gap-2 text-[14px] font-medium text-[#16191D] py-[13px]">
-                                <input type="radio" class="w-5" >
+                                <input type="radio" class="w-5">
                                 <p>Новые сперва</p>
                             </span>
                         </div>
@@ -121,7 +117,8 @@
                                 <p>Премиум</p>
                             </span>
 
-                            <button class="w-[230px] mt-[27px] h-11 bg-[#388FF3] rounded-lg text-white font-semibold transition-all duration-300 hover:bg-[#3879f3]  ">
+                            <button
+                                class="w-[230px] mt-[27px] h-11 bg-[#388FF3] rounded-lg text-white font-semibold transition-all duration-300 hover:bg-[#3879f3]  ">
                                 Применить фильтр
                             </button>
                         </div>
@@ -131,14 +128,22 @@
 
             <article>
                 <div class="w-full flex flex-col gap-3">
-                   <Goback/>
+                    <Goback />
 
                     <div class="flex justify-between">
                         <p class="text-[#8E9297] text-[14px] font-medium">156 объявлений</p>
 
                         <span class="flex gap-3">
-                            <img src="../../../public/productList//list.png" alt="">
-                            <img src="../../../public/productList//kvadrat.png" alt="">
+                        
+                            <button class="hidden max-lg:flex">
+                                <img src="../../../public/productList/filtr.svg" alt="" />
+                            </button>
+                            <button>
+                                <img src="../../../public/productList//list.png" alt="">
+                            </button>
+                            <button>
+                                <img src="../../../public/productList//kvadrat.png" alt="">
+                            </button>
                         </span>
                     </div>
                 </div>
@@ -158,6 +163,7 @@
     import Advertis from './advertising-props.vue';
     import LoadingCard from "../ui/loading.vue";
     import Goback from './goback.vue';
+    import filtrModal from '../modals/filtr-modal.vue';
     import {
         ref,
         onMounted
@@ -192,8 +198,6 @@
     onMounted(() => {
         LoadAdvertis();
     });
-
-
 
 </script>
 
