@@ -1,37 +1,46 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/main.vue'
 import productList from '../components/advertisements/advertisList.vue'
-import Layout from '../layout/layout.vue'
+
 import ads from '../components/ads/terms-of-use.vue'
+import notfound from '../components/404/notfound.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
-      path: '/',
-      component: Layout,
-      children:[
-        
         {
           path: '/',
           name: 'home',
+          meta: {
+            layout: "Defoult"
+          },
           component: HomeView,
         },
-
         {
-          path: 'Product',
+          path: '/Product',
           name: 'product',
+          meta: {
+            layout: "Defoult"
+          },
           component: productList
         },
         {
-          path: 'Ads',
+          path: '/Ads',
           name: 'ads',
+          meta: {
+            layout:"Defoult"
+          },
           component: ads
-        }
-
+        },
+        {
+          path: "/:catchAll(.*)",
+          name: "Not Found",
+          meta: {
+            layout: "Empty"
+          },
+          component: notfound,
+        },
       ]
-    }
- 
-  ],
 })
 
 export default router

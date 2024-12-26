@@ -10,11 +10,11 @@
                 <p>Нам жаль, но, похоже, мы потеряли эту страницу, но мы не хотим терять вас.</p>
             </div>
 
-            <div>
-                <button class="px-[34px] py-3 bg-[#388FF3] font-semibold font-normal text-white rounded-lg">
+            <router-link to="/">
+                <button class="px-[34px] py-3 bg-[#388FF3] text-white rounded-lg">
                     Вернуться на главную    
                 </button>
-            </div>
+            </router-link>
         </div>
     </div>
 </template>

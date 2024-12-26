@@ -1,23 +1,32 @@
 <script setup>
-    import {
-        ref
-    } from 'vue';
+import { ref, onMounted } from 'vue';
 
-    const isLanguageModalOpen = ref(false); 
-    const selectedLanguage = ref('ru'); 
+const isLanguageModalOpen = ref(false); 
+const selectedLanguage = ref('ru');
 
+onMounted(() => {
+    const savedLanguage = localStorage.getItem('selectedLanguage');
+    const savedModalState = localStorage.getItem('isLanguageModalOpen');
     
-    const toggleLanguageModal = () => {
-        isLanguageModalOpen.value = !isLanguageModalOpen.value;
+    if (savedLanguage) {
+        selectedLanguage.value = savedLanguage; 
     }
 
-
-    const changeLanguage = (lang) => {
-        selectedLanguage.value = lang; 
-        isLanguageModalOpen.value = false; 
+    if (savedModalState) {
+        isLanguageModalOpen.value = JSON.parse(savedModalState);
     }
+});
+const toggleLanguageModal = () => {
+    isLanguageModalOpen.value = !isLanguageModalOpen.value;
+    localStorage.setItem('isLanguageModalOpen', JSON.stringify(isLanguageModalOpen.value));
+};
+const changeLanguage = (lang) => {
+    selectedLanguage.value = lang;
+    isLanguageModalOpen.value = false;
+    localStorage.setItem('selectedLanguage', lang);
+    localStorage.setItem('isLanguageModalOpen', JSON.stringify(isLanguageModalOpen.value));
+};
 </script>
-
 <template>
     <div>
         <div class="flex gap-1 items-center pl-5 cursor-pointer relative" @click="toggleLanguageModal">

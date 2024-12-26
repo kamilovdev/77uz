@@ -3,6 +3,7 @@
 
 <template>
     <footer class="w-[100%] h-auto bg-white flex flex-col items-center mt-16 max-sm:p-2">
+     
         <div class="mt-[-32px]">
             <img class="shadow-custom" src="../../public/navbar/logo.svg" alt="">
         </div>
@@ -34,7 +35,7 @@
         </div>
         <div class="w-[470px] font-semibold text-center mt-2 mb-[13px] max-sm:w-full">
             Загрузите наше <span class="text-[rgba(56,143,243,1)]">приложение</span> и пользуйтесь с платформой <span
-                class="text-[rgba(56,143,243,1)]">ещё удобнее</span>
+                class="text-[rgba(56,143,243,1)]"> <router-link to="Ads">ещё удобнее</router-link> </span>
         </div>
     </footer>
 </template>

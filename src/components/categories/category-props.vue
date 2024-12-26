@@ -13,7 +13,7 @@
 </script>
 
 <template>
-  <router-link to="Ads">
+  <router-link to="/">
     <div class="flex items-center group cursor-pointer">
       <div
         class="w-[64px] h-[64px] flex absolute bg-white justify-center items-center rounded-xl border transition-all duration-500  group-hover:bg-[#388FF3] group-active:bg-[#388FF3]">

@@ -29,7 +29,7 @@
 </script>
 
 <template>
-  <RouterLink to="Product">
+
     <div class="bg-white w-full rounded-xl group">
       <div class="relative">
         <div class="w-full">
@@ -73,5 +73,5 @@
         </span>
       </div>
     </div>
-  </RouterLink>
+
 </template>
