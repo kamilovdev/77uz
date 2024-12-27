@@ -16,10 +16,12 @@
                 <span><img src="../../public/footer/symbol.svg" alt=""></span>
                 <p>Доска объявлений</p>
             </div>
-            <div class="flex items-center gap-[5px] font-semibold text-[20px] hover:text-[rgba(56,143,243,1)] cursor-pointer  max-sm:text-[14px]">
-                <span><img src="../../public/footer/symbol.svg" alt=""></span>
-                Условия пользования
-            </div>
+            <router-link to="Ads">
+                <div class="flex items-center gap-[5px] font-semibold text-[20px] hover:text-[rgba(56,143,243,1)] cursor-pointer  max-sm:text-[14px]">
+                    <span><img src="../../public/footer/symbol.svg" alt=""></span>
+                    Условия пользования
+                </div>
+            </router-link>
             <div class="flex items-center gap-[5px] font-semibold text-[20px] hover:text-[rgba(56,143,243,1)] cursor-pointer  max-sm:text-[14px] ">
                 <span><img src="../../public/footer/symbol.svg" alt=""></span>
                 +998 88 500 50 00
@@ -35,7 +37,7 @@
         </div>
         <div class="w-[470px] font-semibold text-center mt-2 mb-[13px] max-sm:w-full">
             Загрузите наше <span class="text-[rgba(56,143,243,1)]">приложение</span> и пользуйтесь с платформой <span
-                class="text-[rgba(56,143,243,1)]"> <router-link to="Ads">ещё удобнее</router-link> </span>
+                class="text-[rgba(56,143,243,1)]">ещё удобнее</span>
         </div>
     </footer>
 </template>

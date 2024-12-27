@@ -1,8 +1,8 @@
 <template>
     <div class="containerMain flex flex-col gap-5">
         <div class="flex gap-4 max-xl:hidden">
-            <router-link to="Product" class="text-[14px] text-[#16191D] font-medium">Главная</router-link>
-            <router-link to="Product" class="text-[14px] text-[#B8BBBD] font-medium">Рестораны и кафе</router-link>
+            <router-link to="/" class="text-[14px] text-[#16191D] font-medium">Главная</router-link>
+            <router-link to="" class="text-[14px] text-[#B8BBBD] font-medium">Рестораны и кафе</router-link>
         </div>
         
         <div class="flex  justify-center ">
