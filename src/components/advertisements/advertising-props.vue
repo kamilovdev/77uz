@@ -7,8 +7,15 @@
 
   const props = defineProps({
     item: {
-      type: Object,
-      required: true,
+      id: Number,
+      country: String,
+      title: String,
+      time: String,
+      number: Number,
+      price: Number,
+      image: String,
+      currency: String,
+      images: String
     },
   });
 
@@ -29,7 +36,7 @@
 </script>
 
 <template>
-<RouterLink to="/Product/:id">
+<RouterLink :to="/product/ +item.id">
   <div class="bg-white w-full rounded-xl group">
     <div class="relative">
       <div class="w-full">

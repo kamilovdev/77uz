@@ -41,7 +41,7 @@ const router = createRouter({
           component: notfound,
         },
         {
-          path:"/Product/:id",
+          path:"/product/:id",
           name:"productSingle",
           meta: {
             layout:"Defoult"

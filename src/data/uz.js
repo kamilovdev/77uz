@@ -149,111 +149,232 @@ export const data = [
 
 export const card = [
     {   
+        id: 1, 
         country: "г. Ташкент",
         title: "Кепки Corneliani Diamond for him edition.",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
         price: "2 599 000",
-        image: new URL("/rek/kepki.png", import.meta.url).href, // Modified path
-        currency: "UZS"
+        image: new URL("/rek/kepki.png", import.meta.url).href,
+        currency: "UZS",
+        images: [
+            new URL("/rek/kepki.png", import.meta.url).href,
+            new URL("/rek/kepki.png", import.meta.url).href,
+            new URL("/rek/kepki.png", import.meta.url).href,
+            new URL("/rek/kepki.png", import.meta.url).href,
+            new URL("/rek/kepki.png", import.meta.url).href,
+            new URL("/rek/kepki.png", import.meta.url).href,
+            new URL("/rek/kepki.png", import.meta.url).href,
+        ]
     },
+    
     {   
+        id: 2, 
         country: "г. Самарканд",
         title: "Chevrolet Onix 1.2 Turbo в наличии",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
         price: "204 000 000",
-        image: "/rek/onix.png", // Modified path
-        currency: "UZS"
+        image: "/rek/onix.png", 
+        currency: "UZS",
+        images: [
+            new URL("/rek/onix.png", import.meta.url).href,
+            new URL("/rek/onix.png", import.meta.url).href,
+            new URL("/rek/onix.png", import.meta.url).href,
+            new URL("/rek/onix.png", import.meta.url).href,
+            new URL("/rek/onix.png", import.meta.url).href,
+            new URL("/rek/onix.png", import.meta.url).href,
+            new URL("/rek/onix.png", import.meta.url).href,
+        ]
     },
     {   
+        id: 3, 
         country: "г. Ташкент",
         title: "7Saber Trucker Cap",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
         price: "280 000",
-        image: "/rek/kepki2.png", // Modified path
-        currency: "UZS"
+        image: "/rek/kepki2.png", 
+        currency: "UZS",
+          images: [
+            new URL("/rek/kepki2.png", import.meta.url).href,
+            new URL("/rek/kepki2.png", import.meta.url).href,
+            new URL("/rek/kepki2.png", import.meta.url).href,
+            new URL("/rek/kepki2.png", import.meta.url).href,
+            new URL("/rek/kepki2.png", import.meta.url).href,
+            new URL("/rek/kepki2.png", import.meta.url).href,
+            new URL("/rek/kepki2.png", import.meta.url).href,
+        ]
     },
     {   
+        id: 4, 
         country: "г. Ташкент",
         title: "Оригинальные кроссовки Nike Air Max Plus",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
         price: "2 599 000",
-        image: "/rek/shoes.png", // Modified path
-        currency: "UZS"
+        image: "/rek/shoes.png", 
+        currency: "UZS",
+        images: [
+            new URL("/rek/shoes.png", import.meta.url).href,
+            new URL("/rek/shoes.png", import.meta.url).href,
+            new URL("/rek/shoes.png", import.meta.url).href,
+            new URL("/rek/shoes.png", import.meta.url).href,
+            new URL("/rek/shoes.png", import.meta.url).href,
+            new URL("/rek/shoes.png", import.meta.url).href,
+            new URL("/rek/shoes.png", import.meta.url).href,
+        ]
     },
     {   
+        id: 5, 
         country: "г. Ташкент",
         title: "Apple Watch Series 8 - USA Non active",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
         price: "2 599 000",
-        image: "/rek/watch.png", // Modified path
-        currency: "UZS"
+        image: "/rek/watch.png", 
+        currency: "UZS",
+        images: [
+            new URL("/rek/watch.png", import.meta.url).href,
+            new URL("/rek/watch.png", import.meta.url).href,
+            new URL("/rek/watch.png", import.meta.url).href,
+            new URL("/rek/watch.png", import.meta.url).href,
+            new URL("/rek/watch.png", import.meta.url).href,
+            new URL("/rek/watch.png", import.meta.url).href,
+            new URL("/rek/watch.png", import.meta.url).href,
+        ]
     },
     {   
+        id: 6, 
         country: "г. Ташкент",
         title: "Кепки Corneliani Diamond for him edition.",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
         price: "2 599 000",
         image: "/rek/nike.png", // Modified path
-        currency: "UZS"
+        currency: "UZS",
+        images: [
+            new URL("/rek/nike.png", import.meta.url).href,
+            new URL("/rek/nike.png", import.meta.url).href,
+            new URL("/rek/nike.png", import.meta.url).href,
+            new URL("/rek/nike.png", import.meta.url).href,
+            new URL("/rek/nike.png", import.meta.url).href,
+            new URL("/rek/nike.png", import.meta.url).href,
+            new URL("/rek/nike.png", import.meta.url).href,
+        ]
     },
     {   
+        id: 7, 
         country: "г. Самарканд",
         title: "Chevrolet Onix 1.2 Turbo в наличии",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
         price: "204 000 000",
         image: "/rek/cadilac.png", // Modified path
-        currency: "UZS"
+        currency: "UZS",
+        images: [
+            new URL("/rek/cadilac.png", import.meta.url).href,
+            new URL("/rek/cadilac.png", import.meta.url).href,
+            new URL("/rek/cadilac.png", import.meta.url).href,
+            new URL("/rek/cadilac.png", import.meta.url).href,
+            new URL("/rek/cadilac.png", import.meta.url).href,
+            new URL("/rek/cadilac.png", import.meta.url).href,
+            new URL("/rek/cadilac.png", import.meta.url).href,
+        ]
     },
     {   
+        id: 8, 
         country: "г. Ташкент",
         title: "7Saber Trucker Cap",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
         price: "280 000",
         image: "/rek/dyson.png", // Modified path
-        currency: "UZS"
+        currency: "UZS",
+        images: [
+            new URL("/rek/dyson.png", import.meta.url).href,
+            new URL("/rek/dyson.png", import.meta.url).href,
+            new URL("/rek/dyson.png", import.meta.url).href,
+            new URL("/rek/dyson.png", import.meta.url).href,
+            new URL("/rek/dyson.png", import.meta.url).href,
+            new URL("/rek/dyson.png", import.meta.url).href,
+            new URL("/rek/dyson.png", import.meta.url).href,
+        ]
     },
     {   
+        id: 9, 
         country: "г. Ташкент",
         title: "Оригинальные кроссовки Nike Air Max Plus",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
         price: "2 599 000",
         image: "/rek/kepki2.png", // Modified path
-        currency: "UZS"
+        currency: "UZS",
+        images: [
+            new URL("/rek/kepki2.png", import.meta.url).href,
+            new URL("/rek/kepki2.png", import.meta.url).href,
+            new URL("/rek/kepki2.png", import.meta.url).href,
+            new URL("/rek/kepki2.png", import.meta.url).href,
+            new URL("/rek/kepki2.png", import.meta.url).href,
+            new URL("/rek/kepki2.png", import.meta.url).href,
+            new URL("/rek/kepki2.png", import.meta.url).href,
+        ]
     },
     {   
+        id: 10, 
         country: "г. Ташкент",
         title: "Apple Watch Series 8 - USA Non active",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
         price: "2 599 000",
         image: "/rek/shoes.png", // Modified path
-        currency: "UZS"
+        currency: "UZS",
+        images: [
+            new URL("/rek/shoes.png", import.meta.url).href,
+            new URL("/rek/shoes.png", import.meta.url).href,
+            new URL("/rek/shoes.png", import.meta.url).href,
+            new URL("/rek/shoes.png", import.meta.url).href,
+            new URL("/rek/shoes.png", import.meta.url).href,
+            new URL("/rek/shoes.png", import.meta.url).href,
+            new URL("/rek/shoes.png", import.meta.url).href,
+        ]
     },
     {   
+        id: 11, 
         country: "г. Самарканд",
         title: "Chevrolet Onix 1.2 Turbo в наличии",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
         price: "204 000 000",
         image: "/rek/onix.png", // Modified path
-        currency: "UZS"
+        currency: "UZS",
+        images: [
+            new URL("/rek/onix.png", import.meta.url).href,
+            new URL("/rek/onix.png", import.meta.url).href,
+            new URL("/rek/onix.png", import.meta.url).href,
+            new URL("/rek/onix.png", import.meta.url).href,
+            new URL("/rek/onix.png", import.meta.url).href,
+            new URL("/rek/onix.png", import.meta.url).href,
+            new URL("/rek/onix.png", import.meta.url).href,
+        ]
     },
     {   
+        id: 12, 
         country: "г. Ташкент",
         title: "7Saber Trucker Cap",
         time: "Вчера, 19:20",
         number: "+998 71 200 70 07",
         price: "280 000",
         image: "/rek/kepki.png", // Modified path
-        currency: "UZS"
+        currency: "UZS",
+        images: [
+            new URL("/rek/kepki.png", import.meta.url).href,
+            new URL("/rek/kepki.png", import.meta.url).href,
+            new URL("/rek/kepki.png", import.meta.url).href,
+            new URL("/rek/kepki.png", import.meta.url).href,
+            new URL("/rek/kepki.png", import.meta.url).href,
+            new URL("/rek/kepki.png", import.meta.url).href,
+            new URL("/rek/kepki.png", import.meta.url).href,
+        ]
     },
 ];
