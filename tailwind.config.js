@@ -9,7 +9,9 @@ export default {
       boxShadow: {
         'blurs': '0px 2px 28px 0px #17181A33',
       },
+      
     },
   },
+  
   plugins: [],
 }

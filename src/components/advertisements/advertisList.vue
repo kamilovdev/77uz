@@ -128,7 +128,10 @@
 
             <article>
                 <div class="w-full flex flex-col gap-3">
-                    <Goback />
+                    <span class="flex items-center gap-3">
+                        <Goback />
+                        <h1 class="text-[32px] font-bold max-sm:text-[24px]">Ноутбуки и планшеты</h1>
+                    </span>
 
                     <div class="flex justify-between">
                         <p class="text-[#8E9297] text-[14px] font-medium">156 объявлений</p>

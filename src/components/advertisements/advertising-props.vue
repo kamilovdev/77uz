@@ -15,7 +15,8 @@
       price: Number,
       image: String,
       currency: String,
-      images: String
+      images: String,
+
     },
   });
 

@@ -356,7 +356,8 @@ export const card = [
             new URL("/rek/onix.png", import.meta.url).href,
             new URL("/rek/onix.png", import.meta.url).href,
             new URL("/rek/onix.png", import.meta.url).href,
-        ]
+        ],
+      
     },
     {   
         id: 12, 
