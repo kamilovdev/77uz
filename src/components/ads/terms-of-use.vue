@@ -1,17 +1,19 @@
+
+
 <template>
-    <div class="containerMain flex flex-col gap-5">
-        <div class="flex gap-4 max-xl:hidden">
-            <router-link to="/" class="text-[14px] text-[#16191D] font-medium">Главная</router-link>
-            <router-link to="" class="text-[14px] text-[#B8BBBD] font-medium">Рестораны и кафе</router-link>
+    <div class="containerMain flex flex-col gap-5 px-4 md:px-8">
+        <!-- Breadcrumbs -->
+        <div class="flex   max-xl:block">
+            <router-link to="/" class="text-sm text-[#16191D] font-medium">Главная</router-link>
+            <router-link to="" class="text-sm text-[#B8BBBD] font-medium">Рестораны и кафе</router-link>
         </div>
         
-        <div class="flex  justify-center ">
-            <div class="flex flex-col justify-start items-start gap-6">
-                <span>
-                    <h1 class="text-[32px] font-bold text-[#16191D]">Условия пользования</h1>
-                </span>
+        <!-- Main Content -->
+        <div class="flex justify-center">
+            <div class="flex flex-col justify-start items-start gap-6 w-full max-w-screen-lg">
+                <h1 class="text-2xl md:text-3xl font-bold text-[#16191D]">Условия пользования</h1>
         
-                <div class="bg-white px-4 py-4 w-[782px] flex flex-col gap-7 text-[14px] font-normal">
+                <div class="bg-white px-4 py-4 w-full max-w-screen-md flex flex-col gap-7 text-sm md:text-base font-normal">
                     <span>
                         <p>В 77.uz мы ценим и уважаем вашу частную жизнь. В этой политике конфиденциальности описываются типы
                             личной информации, которую мы собираем, как мы используем и защищаем эту информацию, а также ваши

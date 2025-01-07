@@ -8,6 +8,7 @@ export default {
     extend: {
       boxShadow: {
         'blurs': '0px 2px 28px 0px #17181A33',
+        'custom-focus': '0px 8.83px 35.31px 0px #388FF370',
       },
       
     },
