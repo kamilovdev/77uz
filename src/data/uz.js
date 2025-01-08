@@ -1,19 +1,25 @@
 export const data = [
     {   
+        id: 1,
         title: "Для женщин",
-        dates:[ ],
         count: "4 147 объявлений " ,
-        icon:"icon-girl"
+        icon:"icon-girl",
+        category: [
+            "Кепки", "Белье", "Платья", "Юбки", "Рубашки", "Шорты", "Штаны", "Толстовки",
+        ]
     },
 
     {   
+        id: 2,
         title: "Красота",
         dates:[ ],
         count: "574 объявлений " ,
-        icon:"icon-img"
+        icon:"icon-img",
+   
     },
 
     {   
+        id: 3,
         title: "Бытовая техника",
         dates:[ ],
         count: "574 объявлений " ,
@@ -21,6 +27,7 @@ export const data = [
     },
 
     {   
+        id: 4,
         title: "Для мужчин",
         dates:[ ],
         count: "547 объявлений " ,
@@ -28,6 +35,7 @@ export const data = [
     },
 
     {   
+        id: 5,
         title: "Здоровье",
         dates:[ ],
         count: "684 объявлений " ,
@@ -35,6 +43,7 @@ export const data = [
     },
 
     {   
+        id: 6,
         title: "Электроника",
         dates:[ ],
         count: "4 147 объявлений " ,
@@ -42,6 +51,7 @@ export const data = [
     },
 
     {   
+        id: 7,
         title: "Детские товары",
         dates:[ ],
         count: "635 объявлений " ,
@@ -49,6 +59,7 @@ export const data = [
     },
 
     {   
+        id: 8,
         title: "Украшения и бижутерия",
         dates:[ ],
         count: "4 147 объявлений " ,
@@ -56,6 +67,7 @@ export const data = [
     },
 
     {   
+        id: 9,
         title: "Домашняя утварь",
         dates:[ ],
         count: "4 147 объявлений " ,
@@ -63,6 +75,7 @@ export const data = [
     },
 
     {   
+        id: 10,
         title: "Обувь",
         dates:[ ],
         count: "684 объявлений " ,
@@ -70,6 +83,7 @@ export const data = [
     },
 
     {   
+        id: 11,
         title: "Канцелярия",
         dates:[ ],
         count: "101 объявлений " ,
@@ -77,6 +91,7 @@ export const data = [
     },
 
     {   
+        id: 12,
         title: "Спорт и отдых",
         dates:[ ],
         count: "741 объявлений " ,
@@ -84,6 +99,7 @@ export const data = [
     },
 
     {   
+        id: 13,
         title: "Автотовары",
         dates:[ ],
         count: "63 объявлений " ,
@@ -91,6 +107,7 @@ export const data = [
     },
     
     {   
+        id: 14,
         title: "Новые легковые автомобили",
         dates:[ ],
         count: "847 объявлений " ,
@@ -98,6 +115,7 @@ export const data = [
     },
 
     {   
+        id: 15,
         title: "Мототранспорт",
         dates:[ ],
         count: "4 147 объявлений " ,
@@ -105,6 +123,7 @@ export const data = [
     },
 
     {   
+        id: 16,
         title: "Дача, сады и огороды",
         dates:[ ],
         count: "847 объявлений " ,
@@ -112,6 +131,7 @@ export const data = [
     },
 
     {   
+        id: 17,
         title: "Личная гигиена",
         dates:[ ],
         count: "741 объявлений " ,
@@ -119,6 +139,7 @@ export const data = [
     },
 
     {   
+        id: 18,
         title: "Аксессуарлар",
         dates:[ ],
         count: "574 объявлений " ,
@@ -126,13 +147,15 @@ export const data = [
     },
 
     {   
+        id: 19,
         title: "Бытовая химия и личная гигиена",
         dates:[ ],
         count: "101 объявлений " ,
         icon:"icon-shoes"
     },
 
-    {   
+    {       
+        id: 20,
         title: "Строительство и ремонт",
         dates:[ ],
         count: "4 147 объявлений " ,
@@ -140,6 +163,7 @@ export const data = [
     },
 
     {   
+        id: 21,
         title: "Сумки и чемоданы",
         dates:[ ],
         count: "4 147 объявлений " ,

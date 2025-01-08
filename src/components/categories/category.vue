@@ -22,6 +22,7 @@
         name: item.title,
         icon: item.icon,
         count: item.count,
+        category: item.category
       }));
 
       loading.value = false;
